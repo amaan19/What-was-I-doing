@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Signup from "../src/Signup";
+import Signup from "../src//Components/Signup";
 import "./App.css";
-import UserPage from "./UserPage";
-import events from "./data";
+import UserPage from "./Components/UserPage";
+// import events from "./data";
 
+const UserURL = "http://localhost:3000/users";
 class App extends Component {
   state = {
-    username: "",
-    events: events
+    username: ""
   };
 
   renderComponent = () => {
