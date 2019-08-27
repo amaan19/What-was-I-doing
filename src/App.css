@@ -1,6 +1,41 @@
-.App {
+.event-card {
+  border-style: inset;
+  /* border-radius: 10%; */
+}
+
+#card-text {
+  margin: 10px;
+}
+
+#mood {
+  display: inline;
+  font-style: oblique;
+  font-size: 1.2rem;
+}
+
+#mood-text {
   text-align: center;
 }
+
+.event-card img {
+  width: 254px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.events-container {
+  display: grid;
+  margin-left: 100px;
+  margin-top: 30px;
+  grid-template-columns: 260px 260px;
+  grid-template-rows: 350px 350px 350px;
+  grid-column-gap: 15rem;
+  grid-row-gap: 1rem;
+}
+
+/* .App {
+  text-align: center;
+} */
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

@@ -60,7 +60,7 @@ class UserPage extends Component {
     })
       .then(resp => resp.json())
       .then(resp => this.setState({ events: [...this.state.events, resp] }));
-    // e.target.reset();
+    e.target.reset();
   };
 
   render() {
@@ -70,7 +70,8 @@ class UserPage extends Component {
           handleFormInput={this.handleFormInput}
           handleNewEvent={this.handleNewEvent}
         />
-        <div>{this.renderEvents()}</div>
+        Recent events:
+        <div className="events-container">{this.renderEvents()}</div>
       </div>
     );
   }

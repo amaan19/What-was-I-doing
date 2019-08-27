@@ -7,7 +7,7 @@ import UserPage from "./Components/UserPage";
 const UserURL = "http://localhost:3000/users";
 class App extends Component {
   state = {
-    username: ""
+    username: "s"
   };
 
   renderComponent = () => {

@@ -4,11 +4,15 @@ import "../App.css";
 class Event extends Component {
   render() {
     return (
-      <div>
-        <h1>{this.props.event.title}</h1>
-        <h2>{this.props.event.mood}</h2>
-        <p>{this.props.event.content}</p>
+      <div className="event-card">
         <img src={this.props.event.image} alt="user attached" />
+        <div id="card-text">
+          <h3>{this.props.event.title}</h3>
+          <div id="mood-text">
+            I felt: <p id="mood">{this.props.event.mood}</p>
+          </div>
+          <p>{this.props.event.content}</p>
+        </div>
       </div>
     );
   }
